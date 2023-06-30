@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=Гра “Змійка”, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="about-me-container">
+            <img class="goit-logo" src="img/logo.png" alt="GOIT logo">
+            <img class="my-photo" src="img/picture.jpg" alt="My picture">
+            <h2 class="about-me-name">
+                Created by Katerina Degtyarova,
+                participant of the "Web Developer of the Future" marathon.
+            </h2>
+            <ul>
+                <li class="about-me-skill">Wrote this game using HTML/CSS, JS</li>
+                <li class="about-me-skill">Has every chance of becoming a developer of the future</li>
+            </ul>
+        </div>
+
+        <div class="game-container">
+            <h1 class="game-title">The game "Snake"</h1>
+            <div class="game-area">
+                <canvas id="game-canvas" class="game-canvas" width=400" height="400"></canvas>
+            </div>
+            <div id="game-score" class="game-score">Score: 0</div>
+
+            <div class="game-controls">
+                <button id="game-start" class="game-start">Start</button>
+                <button id="game-restart" class="game-restart">Restart</button>
+            </div>
+        </div>
+
+        <div class="instructions-container">
+            <h3 class="instructions-title">Instructions for the game</h3>
+            <ul>
+                <li class="instructions-skill">Use the arrow keys on your keyboard (left, right, up, down) to control the movement of the snake. Press the corresponding arrow key to change the direction of the snake's movement.</li>
+                <li class="instructions-skill">The goal of the game is to collect the food that appears on the game field. When the snake's head collides with the food, the snake will grow longer in length.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="js/game.js"></script>
+    
+</body>
+</html>
